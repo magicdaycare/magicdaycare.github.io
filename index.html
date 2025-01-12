@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Day Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Logo is turned white in the css with a filter on dark mode-->
+            <a href="#sbsr-1475" class="cs-logo" aria-label="back to home">
+                <img src="./media/test2.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are -->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="#sbsr-1475" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#why-choose-1485" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#services-1498" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <!-- <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Services
+                                <img class="cs-drop-icon"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg"
+                                    alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Registration</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li class="cs-li">
+                            <a href="#timeline-1517" class="cs-li-link">
+                                Timeline
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#faq-1505" class="cs-li-link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cs-contact-group">
+                <a href="tel:917 689 9750" class="cs-phone">
+                    <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg"
+                        alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                    (917) 689-9750
+                </a>
+                <div class="cs-social">
+                    <a href="https://www.facebook.com/profile.php?id=100063598321621" target="_blank"
+                        class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="https://www.instagram.com/magicdaycaresi/" target="_blank" class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse             -->
+    <!-- ============================================ -->
+
+    <section id="sbsr-1475">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <!--Floating Box-->
+                <div class="cs-box">
+                    <!--Blob-->
+                    <img class="cs-blob" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/blob-shape3.svg" alt="blob"
+                        width="254" height="238" aria-hidden="true">
+                    <span class="cs-number">100%</span>
+                    <span class="cs-desc">Satisfaction Rating</span>
+                </div>
+                <!--Big Background Image-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="./media/leo.jpg">
+                    <source media="(min-width: 601px)" srcset="./media/leo.jpg">
+                    <img loading="lazy" decoding="async" src="./media/leo.jpg" alt="girl enjoying activities"
+                        width="542" height="720" aria-hidden="true">
+                </picture>
+                <!--Oval-->
+                <img class="cs-oval" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/oval.svg" alt="oval" width="727"
+                    height="480" aria-hidden="true">
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Magic Day Care</span>
+                <h2 class="cs-title">Welcome To Your Child's Magic Future</h2>
+                <p class="cs-text">
+                    At Magic Day Care, we believe in nurturing young minds and fostering creativity. Our play-based,
+                    Montessori-inspired approach ensures every child feels safe, valued, and excited to learn. With
+                    nearly two decades of experience serving families in Staten Island, our dedicated team is committed
+                    to helping
+                    your
+                    child achieve important milestones in a warm and caring environment.
+                </p>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                            alt="checkmark" width="24" height="24">
+                        A nurturing, family-owned daycare since 2007.
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                            alt="checkmark" width="24" height="24">
+                        Developed a unique and versatile teaching methology to promote essential social and academic
+                        skills.
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                            alt="checkmark" width="24" height="24">
+                        Age-appropriate programming for kids aged 18 months to 5 years.
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                            alt="checkmark" width="24" height="24">
+                        Safe, engaging spaces where children thrive.
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                            alt="checkmark" width="24" height="24">
+                        Homemade organic meals.
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                            alt="checkmark" width="24" height="24">
+                        Trusted by hundreds of families throughout Staten Island.
+                    </li>
+                </ul>
+                <a class="cs-button-solid" aria-label="learn more about our programs" href="#why-choose-1485">Learn
+                    More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Why us -->
+    <!-- ============================================ -->
+    <!--               Why Choose Us                  -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1485">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <!--Top left image-->
+                <picture class="cs-picture cs-picture1">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="./media/crew.jpeg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="./media/crew.jpeg">
+                    <img loading="lazy" decoding="async" src="./media/crew.jpeg" alt="kid" width="647" height="600">
+                </picture>
+                <!--Middle image-->
+                <picture class="cs-picture cs-picture2">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="./media/mom.jpeg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="./media/mom.jpeg">
+                    <img loading="lazy" decoding="async" src="" alt="kid" width="320" height="320">
+                </picture>
+                <!--Flower-->
+                <img class="cs-flower" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/flower3.svg" alt="graphic"
+                    width="153" height="148" aria-hidden="true">
+                <!--Sqiggle-->
+                <img class="cs-squiggle" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/squiggle4.svg" alt="graphic"
+                    width="215" height="61" aria-hidden="true">
+                <!--SVG Mask-->
+                <svg class="cs-mask" width="647" height="600" viewBox="0 0 647 600" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="cs-outer-mask" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 0H647V600H0V0ZM38 110C64.0297 75.766 102.579 52.0824 143 37C144.788 36.3365 146.555 35.5378 148.324 34.7378C150.529 33.7407 152.738 32.7417 155 32C251.273 0.380304 364.071 -8.26436 457 38C514.621 66.6831 553.453 118.152 591.339 168.368C596.562 175.29 601.767 182.188 607 189C657.382 254.558 650.888 352.089 614 422C585.347 476.308 539.036 519.481 487 552C403.358 604.274 320.729 610.296 236 554C116.994 474.921 -74.8032 258.339 38 110Z"
+                        fill="#FFF8F5" />
+                    <!--Svg Border-->
+                    <path class="cs-mask-border"
+                        d="M609.578 419.667L614 422L609.578 419.667C645.882 350.863 651.85 255.566 603.035 192.047L603.035 192.046C597.763 185.184 592.537 178.261 587.308 171.335C549.335 121.032 511.26 70.5951 454.772 42.4761L454.772 42.476C363.478 -2.9739 252.173 5.34746 156.56 36.7504L156.558 36.7511C154.801 37.3273 153.023 38.1029 151.033 39.0003C150.82 39.0965 150.603 39.1945 150.384 39.2937C148.637 40.0841 146.708 40.9569 144.748 41.6845C104.889 56.5573 67.259 79.7797 41.9802 113.026L38 110L41.98 113.027C-12.5389 184.72 5.99713 273.442 54.3776 355.432C102.668 437.269 179.806 510.656 238.767 549.836C280.403 577.499 321.25 589.69 361.787 588.715C402.372 587.739 443.075 573.556 484.35 547.76C535.868 515.565 581.448 472.984 609.578 419.667Z"
+                        stroke="#FFD3C6" stroke-width="10" />
+                </svg>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">About Magic Day Care</span>
+                <h2 class="cs-title">Why Families Choose Us</h2>
+                <p class="cs-text">
+                    At Magic Day Care, we strive to create a nurturing and stimulating environment for your child,
+                    helping them
+                    thrive during their most formative years. Our passionate team, secure facilities, and engaging
+                    programs
+                    ensure every child’s growth and happiness.
+                </p>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <picture class="cs-li-picture">
+                            <img class="cs-li-icon" aria-hidden="true"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/direction.svg"
+                                decoding="async" alt="icon" width="36" height="36" loading="lazy">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Our Mission</h3>
+                            <p class="cs-li-text">
+                                To empower every child with the confidence, compassion, and curiosity to explore their
+                                world and
+                                realize their potential.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li">
+                        <picture class="cs-li-picture">
+                            <img class="cs-li-icon" aria-hidden="true"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/target.svg"
+                                decoding="async" alt="icon" width="36" height="36" loading="lazy">
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Our Vision</h3>
+                            <p class="cs-li-text">
+                                A future where every child receives the care and education they deserve, fostering a
+                                lifetime
+                                of learning and joy.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li">
+                        <picture class="cs-li-picture">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #ff6a3a;"></i>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Our Values</h3>
+                            <p class="cs-li-text">
+                                Compassion, creativity, and collaboration guide everything we do at Magic Day Care.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="https://nyweekly.com/lifestyle/a-unique-child-daycare-16-years-of-excellence-and-tailored-education/"
+                    class="cs-button-solid" target="_blank">More on our Founder</a>
+            </div>
+        </div>
+        <!--Top Zig Zag-->
+        <svg class="cs-top" width="1920" height="39" viewBox="0 0 1920 39" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1920 0H0V15.8216L4.95532 13.3966L18.1455 15.2801L28.6394 22.5944L42.0481 24.423L54.0723 27.0599L66.8979 21.3623L78.7034 23.6147L90.9463 27.8134L102.533 21.5742L114.776 24.5329L126.654 25.2314L138.605 24.7997L148.881 29.1554L160.759 28.6217L171.18 33.354L183.569 27.1698L194.573 29.9637L207.69 30.0186L219.277 25.7179L228.531 18.9373L240.556 16.0335L253.017 13.3966L265.989 13.0748L279.033 14.5267L292.296 16.1983L305.413 12.5333L317.437 17.0537L331.065 15.0682L342.943 19.157L354.749 23.0261L366.773 26.1496L378.943 29.2652L391.331 31.6903L405.469 28.0802L417.274 32.067L428.57 35.1277L440.375 35.2925L451.598 38.4631L463.622 37.7097L475.208 38.8947L487.087 35.7241L498.455 36.7993L510.115 38.1413L522.285 34.2173L536.058 32.012L547.864 26.3065L561.928 29.2652L574.171 20.7658L587.434 22.0058L599.604 24.0463L611.191 21.5192L623.215 24.6428L634.947 25.2863L646.607 23.9443L658.413 20.499L670.437 17.7051L681.805 24.423L694.048 20.7658L706.072 20.1223L728.226 29.43L741.197 24.6428H753.221L761.31 35.6692L773.771 34.1624L785.65 29.8067L796.29 31.2586L809.261 34.594L818.37 26.7382L828.864 22.1628L842.418 22.9711L852.329 17.0537L866.248 19.314L875.722 11.7877L887.673 9.95128L900.28 11.2462L911.94 8.2875L924.474 10.328L937.373 8.17763L949.98 7.15739L961.931 10.3123L966.887 7.8951L980.077 15.1545L990.57 22.4689L1003.98 24.2974L1016 26.9344L1028.83 21.2367L1040.63 23.4891L1052.88 27.6878L1064.46 21.4486L1076.71 24.4073L1088.59 25.1058L1100.54 24.6741L1110.81 29.0298L1122.69 28.4961L1133.11 33.2285L1145.5 27.0442L1156.5 29.8381L1169.62 29.8931L1181.21 25.5924L1190.46 18.8117L1202.49 15.9079L1214.95 13.271L1227.92 12.9492L1240.96 14.4011L1254.23 16.0727L1267.34 12.4077L1279.37 16.9282L1293 14.9426L1304.87 19.0236L1316.68 22.9005L1328.7 26.024L1340.87 29.1397L1353.26 31.5647L1367.4 27.9546L1379.21 31.9414L1390.5 35.0021L1402.31 35.1669L1413.53 38.3375L1425.55 37.5841L1437.14 38.7692L1449.02 35.5986L1460.39 36.6738L1472.05 38.0158L1484.22 34.0918L1497.99 31.8865L1509.79 26.181L1523.86 29.1397L1536.1 20.6403L1549.37 21.8803L1561.54 23.9207L1573.12 21.3937L1585.15 24.5172L1596.88 25.1607L1608.54 23.8187L1620.34 20.3734L1632.37 17.5717L1643.74 24.2974L1655.98 20.6403L1668 19.9967L1690.16 29.3045L1703.13 24.5172H1715.15L1723.24 35.5436L1735.7 34.0368L1747.58 29.6812L1758.22 31.1331L1771.19 34.4685L1780.3 26.6126L1790.79 22.0372L1804.35 22.8456L1814.26 16.9282L1828.18 19.1884L1837.65 11.6543L1849.6 9.82571L1862.21 11.1206L1873.87 8.16193L1886.41 10.2024L1899.3 8.05206L1911.91 7.03182L1920 7.78523V0Z"
+                fill="white" />
+        </svg>
+        <!--Bottom Zig Zag-->
+        <svg class="cs-bottom" width="1920" height="39" viewBox="0 0 1920 39" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1920 38.8948H0V23.0732L4.95532 25.4982L18.1455 23.6147L28.6394 16.3004L42.0481 14.4718L54.0723 11.8348L66.8979 17.5325L78.7034 15.2801L90.9463 11.0814L102.533 17.3206L114.776 14.3619L126.654 13.6634L138.605 14.0951L148.881 9.73941L160.759 10.2731L171.18 5.54073L183.569 11.725L194.573 8.93107L207.69 8.87613L219.277 13.1768L228.531 19.9575L240.556 22.8613L253.017 25.4982L265.989 25.82L279.033 24.3681L292.296 22.6965L305.413 26.3615L317.437 21.841L331.065 23.8266L342.943 19.7378L354.749 15.8687L366.773 12.7452L378.943 9.62954L391.331 7.20451L405.469 10.8146L417.274 6.8278L428.57 3.76708L440.375 3.60227L451.598 0.431672L463.622 1.18508L475.208 3.12403e-05L487.087 3.17063L498.455 2.09545L510.115 0.75344L522.285 4.67745L536.058 6.88274L547.864 12.5882L561.928 9.62954L574.171 18.1289L587.434 16.889L599.604 14.8485L611.191 17.3755L623.215 14.252L634.947 13.6085L646.607 14.9505L658.413 18.3958L670.437 21.1897L681.805 14.4718L694.048 18.1289L706.072 18.7725L728.226 9.46473L741.197 14.252H753.221L761.31 3.22556L773.771 4.73238L785.65 9.08803L796.29 7.63615L809.261 4.30074L818.37 12.1566L828.864 16.732L842.418 15.9236L852.329 21.841L866.248 19.5808L875.722 27.1071L887.673 28.9435L900.28 27.6486L911.94 30.6073L924.474 28.5668L937.373 30.7171L949.98 31.7374L961.931 28.5825L966.887 30.9997L980.077 23.7403L990.57 16.4259L1003.98 14.5973L1016 11.9604L1028.83 17.6581L1040.63 15.4057L1052.88 11.207L1064.46 17.4462L1076.71 14.4875L1088.59 13.789L1100.54 14.2206L1110.81 9.86498L1122.69 10.3986L1133.11 5.6663L1145.5 11.8505L1156.5 9.05664L1169.62 9.0017L1181.21 13.3024L1190.46 20.0831L1202.49 22.9869L1214.95 25.6238L1227.92 25.9456L1240.96 24.4937L1254.23 22.822L1267.34 26.4871L1279.37 21.9666L1293 23.9522L1304.87 19.8712L1316.68 15.9943L1328.7 12.8708L1340.87 9.75511L1353.26 7.33007L1367.4 10.9402L1379.21 6.95337L1390.5 3.89264L1402.31 3.72784L1413.53 0.55724L1425.55 1.31065L1437.14 0.125599L1449.02 3.2962L1460.39 2.22102L1472.05 0.879009L1484.22 4.80301L1497.99 7.00831L1509.79 12.7138L1523.86 9.75511L1536.1 18.2545L1549.37 17.0145L1561.54 14.974L1573.12 17.5011L1585.15 14.3776L1596.88 13.7341L1608.54 15.0761L1620.34 18.5213L1632.37 21.3231L1643.74 14.5973L1655.98 18.2545L1668 18.898L1690.16 9.5903L1703.13 14.3776H1715.15L1723.24 3.35113L1735.7 4.85795L1747.58 9.2136L1758.22 7.76171L1771.19 4.42631L1780.3 12.2822L1790.79 16.8576L1804.35 16.0492L1814.26 21.9666L1828.18 19.7064L1837.65 27.2405L1849.6 29.0691L1862.21 27.7741L1873.87 30.7328L1886.41 28.6924L1899.3 30.8427L1911.91 31.863L1920 31.1095V38.8948Z"
+                fill="white" />
+        </svg>
+    </section>
+
+    <!-- Services -->
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-1498">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our services</span>
+                <h2 class="cs-title">We Meet Kids at Their Level
+                    Regardless of Their Age</h2>
+                <p class="cs-text">
+                    At Magic Day Care, we nurture every child’s potential by focusing on their social, emotional,
+                    intellectual, and physical
+                    development.
+                    Your child’s security and happiness are our top priorities.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)"
+                                srcset="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/467624667_18349828378193784_7562998867209600175_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=diuZrmLKaVgQ7kNvgFBZS4E&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=AJCZEwEGsczAs_bSQh-ZN_K&oh=00_AYCs6VhdD2sGKtDkILEbi3J-Tv_rIuSULgaoT2y8_YDWpQ&oe=6784C17D" />
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)"
+                                srcset="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/467624667_18349828378193784_7562998867209600175_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=diuZrmLKaVgQ7kNvgFBZS4E&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=AJCZEwEGsczAs_bSQh-ZN_K&oh=00_AYCs6VhdD2sGKtDkILEbi3J-Tv_rIuSULgaoT2y8_YDWpQ&oe=6784C17D" />
+                            <img loading="lazy" decoding="async"
+                                src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/467624667_18349828378193784_7562998867209600175_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=diuZrmLKaVgQ7kNvgFBZS4E&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=AJCZEwEGsczAs_bSQh-ZN_K&oh=00_AYCs6VhdD2sGKtDkILEbi3J-Tv_rIuSULgaoT2y8_YDWpQ&oe=6784C17D"
+                                alt="kids" width="413" height="240" aria-hidden="true" />
+                        </picture>
+                        <!--SVG Mask-->
+                        <svg class="cs-mask" id="Layer_2-1498" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267 209">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: var(--maskBorder);
+                                        stroke-width: 8px;
+                                    }
+
+                                    .cls-2,
+                                    .cls-3 {
+                                        fill: var(--maskBG);
+                                        stroke-width: 0px;
+                                    }
+
+                                    .cls-3 {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2-1498">
+                                <polygon class="cls-2"
+                                    points="0 0 267 0 267 97.57 261.9 96.44 254.23 31.4 246.08 17.19 239.14 11.22 222 5.16 196.11 5.16 26.01 8.58 15.9 14.37 8.36 53.13 4.98 74.89 3.92 107.77 3.35 113.06 0 113.06 0 0" />
+                                <polygon class="cls-2"
+                                    points="0 209 267 209 267 96.06 261.9 96.44 260.17 112.12 259.45 130.79 255.36 164.41 248.83 184.12 245.63 192.64 236.74 196.78 211.04 193.94 180.05 193.57 142.62 192.82 56.27 199.8 38.87 202.95 27.54 204.09 23.82 197.54 14.13 186.76 9.59 164.54 4.98 108.52 0 107.96 0 209" />
+                                <path class="cls-3"
+                                    d="m7.98,55.76c1.17-11.05,2.57-21.17,4-29.72C14.68,9.8,19.1,7.55,30.98,7.04H7.98v48.72Zm0,99.31v45.97h15.85c-.31-.29-.6-.62-.85-1-7.58-11.22-12.3-27.06-15-44.97Zm45.14,45.97h205.86v-66.15c-.48,4.57-.99,9.12-1.5,13.68-.17,1.49-.33,2.98-.5,4.47-1.41,12.9-4.14,24.28-8,34-2.17,5.43-5.36,8.48-10,8-62.85-6.44-123.94-2.01-185.86,6ZM258.98,49.82V7.04h-25.8c10.43,4.14,18.6,12.97,22.8,29,1.2,4.59,2.19,9.19,3,13.78Z" />
+                                <path class="cls-1"
+                                    d="m11.98,27.07c-7.61,45.4-14.6,135.31,11,172.99,1,1.49,2.58,2.27,4,2.98,1.42.72,2.48,1.22,4,.99,69.54-9.75,137.68-16.11,208-8.95,4.64.48,7.83-2.56,10-7.95,3.86-9.66,6.59-20.97,8-33.8,4.29-38.45,9.25-77.33-1-116.32-6.31-23.95-21.59-31.73-40-31.81-76.24-.28-138.07.98-185,2.98-11.87.51-16.3,2.74-19,18.89Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Montessori Inspiration</h3>
+                        <span class="cs-ages">(All Ages)</span>
+                        <p class="cs-item-text">
+                            Fostering independence, creativity, and critical thinking through a hands-on, child-centered
+                            approach.
+                        </p>
+
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)"
+                                srcset="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/467575097_18349827892193784_9115129668110566279_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Uv36yV95Z20Q7kNvgHr09EZ&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=AdnUZ08FCwH-Mnla_lmhLwm&oh=00_AYCyD5JpIBp_50O_1KucLFEPPZtrvSRVtZ3lfF_OfOTh5Q&oe=6784D196" />
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)"
+                                srcset="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/467575097_18349827892193784_9115129668110566279_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Uv36yV95Z20Q7kNvgHr09EZ&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=AdnUZ08FCwH-Mnla_lmhLwm&oh=00_AYCyD5JpIBp_50O_1KucLFEPPZtrvSRVtZ3lfF_OfOTh5Q&oe=6784D196" />
+                            <img loading="lazy" decoding="async"
+                                src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/467575097_18349827892193784_9115129668110566279_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Uv36yV95Z20Q7kNvgHr09EZ&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=AdnUZ08FCwH-Mnla_lmhLwm&oh=00_AYCyD5JpIBp_50O_1KucLFEPPZtrvSRVtZ3lfF_OfOTh5Q&oe=6784D196"
+                                alt="kids" width="413" height="240" aria-hidden="true" />
+                        </picture>
+                        <!--SVG Mask-->
+                        <svg class="cs-mask" id="Layer_2-1498" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267 209">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: var(--maskBorder);
+                                        stroke-width: 8px;
+                                    }
+
+                                    .cls-2,
+                                    .cls-3 {
+                                        fill: var(--maskBG);
+                                        stroke-width: 0px;
+                                    }
+
+                                    .cls-3 {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2-1498">
+                                <polygon class="cls-2"
+                                    points="0 0 267 0 267 97.57 261.9 96.44 254.23 31.4 246.08 17.19 239.14 11.22 222 5.16 196.11 5.16 26.01 8.58 15.9 14.37 8.36 53.13 4.98 74.89 3.92 107.77 3.35 113.06 0 113.06 0 0" />
+                                <polygon class="cls-2"
+                                    points="0 209 267 209 267 96.06 261.9 96.44 260.17 112.12 259.45 130.79 255.36 164.41 248.83 184.12 245.63 192.64 236.74 196.78 211.04 193.94 180.05 193.57 142.62 192.82 56.27 199.8 38.87 202.95 27.54 204.09 23.82 197.54 14.13 186.76 9.59 164.54 4.98 108.52 0 107.96 0 209" />
+                                <path class="cls-3"
+                                    d="m7.98,55.76c1.17-11.05,2.57-21.17,4-29.72C14.68,9.8,19.1,7.55,30.98,7.04H7.98v48.72Zm0,99.31v45.97h15.85c-.31-.29-.6-.62-.85-1-7.58-11.22-12.3-27.06-15-44.97Zm45.14,45.97h205.86v-66.15c-.48,4.57-.99,9.12-1.5,13.68-.17,1.49-.33,2.98-.5,4.47-1.41,12.9-4.14,24.28-8,34-2.17,5.43-5.36,8.48-10,8-62.85-6.44-123.94-2.01-185.86,6ZM258.98,49.82V7.04h-25.8c10.43,4.14,18.6,12.97,22.8,29,1.2,4.59,2.19,9.19,3,13.78Z" />
+                                <path class="cls-1"
+                                    d="m11.98,27.07c-7.61,45.4-14.6,135.31,11,172.99,1,1.49,2.58,2.27,4,2.98,1.42.72,2.48,1.22,4,.99,69.54-9.75,137.68-16.11,208-8.95,4.64.48,7.83-2.56,10-7.95,3.86-9.66,6.59-20.97,8-33.8,4.29-38.45,9.25-77.33-1-116.32-6.31-23.95-21.59-31.73-40-31.81-76.24-.28-138.07.98-185,2.98-11.87.51-16.3,2.74-19,18.89Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Language Development</h3>
+                        <span class="cs-ages">(All Ages)</span>
+                        <p class="cs-item-text">
+                            Helping kids master communication skills and multilingual abilities to enhance their
+                            confidence and curiosity.
+                        </p>
+
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="./media/math.png" />
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="./media/math.png" />
+                            <img loading="lazy" decoding="async" src="./media/math.png" alt="kids" width="413"
+                                height="240" aria-hidden="true" />
+                        </picture>
+                        <!--SVG Mask-->
+                        <svg class="cs-mask" id="Layer_2-1498" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267 209">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: var(--maskBorder);
+                                        stroke-width: 8px;
+                                    }
+
+                                    .cls-2,
+                                    .cls-3 {
+                                        fill: var(--maskBG);
+                                        stroke-width: 0px;
+                                    }
+
+                                    .cls-3 {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2-1498">
+                                <polygon class="cls-2"
+                                    points="0 0 267 0 267 97.57 261.9 96.44 254.23 31.4 246.08 17.19 239.14 11.22 222 5.16 196.11 5.16 26.01 8.58 15.9 14.37 8.36 53.13 4.98 74.89 3.92 107.77 3.35 113.06 0 113.06 0 0" />
+                                <polygon class="cls-2"
+                                    points="0 209 267 209 267 96.06 261.9 96.44 260.17 112.12 259.45 130.79 255.36 164.41 248.83 184.12 245.63 192.64 236.74 196.78 211.04 193.94 180.05 193.57 142.62 192.82 56.27 199.8 38.87 202.95 27.54 204.09 23.82 197.54 14.13 186.76 9.59 164.54 4.98 108.52 0 107.96 0 209" />
+                                <path class="cls-3"
+                                    d="m7.98,55.76c1.17-11.05,2.57-21.17,4-29.72C14.68,9.8,19.1,7.55,30.98,7.04H7.98v48.72Zm0,99.31v45.97h15.85c-.31-.29-.6-.62-.85-1-7.58-11.22-12.3-27.06-15-44.97Zm45.14,45.97h205.86v-66.15c-.48,4.57-.99,9.12-1.5,13.68-.17,1.49-.33,2.98-.5,4.47-1.41,12.9-4.14,24.28-8,34-2.17,5.43-5.36,8.48-10,8-62.85-6.44-123.94-2.01-185.86,6ZM258.98,49.82V7.04h-25.8c10.43,4.14,18.6,12.97,22.8,29,1.2,4.59,2.19,9.19,3,13.78Z" />
+                                <path class="cls-1"
+                                    d="m11.98,27.07c-7.61,45.4-14.6,135.31,11,172.99,1,1.49,2.58,2.27,4,2.98,1.42.72,2.48,1.22,4,.99,69.54-9.75,137.68-16.11,208-8.95,4.64.48,7.83-2.56,10-7.95,3.86-9.66,6.59-20.97,8-33.8,4.29-38.45,9.25-77.33-1-116.32-6.31-23.95-21.59-31.73-40-31.81-76.24-.28-138.07.98-185,2.98-11.87.51-16.3,2.74-19,18.89Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Mathematical Reasoning</h3>
+                        <span class="cs-ages">(All Ages)</span>
+                        <p class="cs-item-text">
+                            Building strong problem-solving skills and logical thinking to lay the foundation for
+                            lifelong learning.
+                        </p>
+
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="./media/reading.png" />
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="./media/reading.png" />
+                            <img loading="lazy" decoding="async" src="./media/reading.png" alt="kids" width="413"
+                                height="240" aria-hidden="true" />
+                        </picture>
+                        <!--SVG Mask-->
+                        <svg class="cs-mask" id="Layer_2-1498" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267 209">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: var(--maskBorder);
+                                        stroke-width: 8px;
+                                    }
+
+                                    .cls-2,
+                                    .cls-3 {
+                                        fill: var(--maskBG);
+                                        stroke-width: 0px;
+                                    }
+
+                                    .cls-3 {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2-1498">
+                                <polygon class="cls-2"
+                                    points="0 0 267 0 267 97.57 261.9 96.44 254.23 31.4 246.08 17.19 239.14 11.22 222 5.16 196.11 5.16 26.01 8.58 15.9 14.37 8.36 53.13 4.98 74.89 3.92 107.77 3.35 113.06 0 113.06 0 0" />
+                                <polygon class="cls-2"
+                                    points="0 209 267 209 267 96.06 261.9 96.44 260.17 112.12 259.45 130.79 255.36 164.41 248.83 184.12 245.63 192.64 236.74 196.78 211.04 193.94 180.05 193.57 142.62 192.82 56.27 199.8 38.87 202.95 27.54 204.09 23.82 197.54 14.13 186.76 9.59 164.54 4.98 108.52 0 107.96 0 209" />
+                                <path class="cls-3"
+                                    d="m7.98,55.76c1.17-11.05,2.57-21.17,4-29.72C14.68,9.8,19.1,7.55,30.98,7.04H7.98v48.72Zm0,99.31v45.97h15.85c-.31-.29-.6-.62-.85-1-7.58-11.22-12.3-27.06-15-44.97Zm45.14,45.97h205.86v-66.15c-.48,4.57-.99,9.12-1.5,13.68-.17,1.49-.33,2.98-.5,4.47-1.41,12.9-4.14,24.28-8,34-2.17,5.43-5.36,8.48-10,8-62.85-6.44-123.94-2.01-185.86,6ZM258.98,49.82V7.04h-25.8c10.43,4.14,18.6,12.97,22.8,29,1.2,4.59,2.19,9.19,3,13.78Z" />
+                                <path class="cls-1"
+                                    d="m11.98,27.07c-7.61,45.4-14.6,135.31,11,172.99,1,1.49,2.58,2.27,4,2.98,1.42.72,2.48,1.22,4,.99,69.54-9.75,137.68-16.11,208-8.95,4.64.48,7.83-2.56,10-7.95,3.86-9.66,6.59-20.97,8-33.8,4.29-38.45,9.25-77.33-1-116.32-6.31-23.95-21.59-31.73-40-31.81-76.24-.28-138.07.98-185,2.98-11.87.51-16.3,2.74-19,18.89Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Literature</h3>
+                        <span class="cs-ages">(All Ages)</span>
+                        <p class="cs-item-text">
+                            Inspiring a love for reading by introducing kids to imaginative worlds,
+                            diverse cultures, and foundational literacy skills.
+                        </p>
+
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)"
+                                srcset="https://scontent-lga3-1.xx.fbcdn.net/v/t51.75761-15/470464625_18353312146193784_1649513917294169292_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SF6ppuaQr-YQ7kNvgFlK0QT&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=Ami246sMMtYLB8Js8R4UWnY&oh=00_AYBL4M8SeUiEuGxGSigegoV-jJeCzBzJLkMqlj_a0Tr9cQ&oe=67837235" />
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)"
+                                srcset="https://scontent-lga3-1.xx.fbcdn.net/v/t51.75761-15/470464625_18353312146193784_1649513917294169292_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SF6ppuaQr-YQ7kNvgFlK0QT&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=Ami246sMMtYLB8Js8R4UWnY&oh=00_AYBL4M8SeUiEuGxGSigegoV-jJeCzBzJLkMqlj_a0Tr9cQ&oe=67837235" />
+                            <img loading="lazy" decoding="async"
+                                src="https://scontent-lga3-1.xx.fbcdn.net/v/t51.75761-15/470464625_18353312146193784_1649513917294169292_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SF6ppuaQr-YQ7kNvgFlK0QT&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=Ami246sMMtYLB8Js8R4UWnY&oh=00_AYBL4M8SeUiEuGxGSigegoV-jJeCzBzJLkMqlj_a0Tr9cQ&oe=67837235"
+                                alt="kids" width="413" height="240" aria-hidden="true" />
+                        </picture>
+                        <!--SVG Mask-->
+                        <svg class="cs-mask" id="Layer_2-1498" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267 209">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: var(--maskBorder);
+                                        stroke-width: 8px;
+                                    }
+
+                                    .cls-2,
+                                    .cls-3 {
+                                        fill: var(--maskBG);
+                                        stroke-width: 0px;
+                                    }
+
+                                    .cls-3 {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2-1498">
+                                <polygon class="cls-2"
+                                    points="0 0 267 0 267 97.57 261.9 96.44 254.23 31.4 246.08 17.19 239.14 11.22 222 5.16 196.11 5.16 26.01 8.58 15.9 14.37 8.36 53.13 4.98 74.89 3.92 107.77 3.35 113.06 0 113.06 0 0" />
+                                <polygon class="cls-2"
+                                    points="0 209 267 209 267 96.06 261.9 96.44 260.17 112.12 259.45 130.79 255.36 164.41 248.83 184.12 245.63 192.64 236.74 196.78 211.04 193.94 180.05 193.57 142.62 192.82 56.27 199.8 38.87 202.95 27.54 204.09 23.82 197.54 14.13 186.76 9.59 164.54 4.98 108.52 0 107.96 0 209" />
+                                <path class="cls-3"
+                                    d="m7.98,55.76c1.17-11.05,2.57-21.17,4-29.72C14.68,9.8,19.1,7.55,30.98,7.04H7.98v48.72Zm0,99.31v45.97h15.85c-.31-.29-.6-.62-.85-1-7.58-11.22-12.3-27.06-15-44.97Zm45.14,45.97h205.86v-66.15c-.48,4.57-.99,9.12-1.5,13.68-.17,1.49-.33,2.98-.5,4.47-1.41,12.9-4.14,24.28-8,34-2.17,5.43-5.36,8.48-10,8-62.85-6.44-123.94-2.01-185.86,6ZM258.98,49.82V7.04h-25.8c10.43,4.14,18.6,12.97,22.8,29,1.2,4.59,2.19,9.19,3,13.78Z" />
+                                <path class="cls-1"
+                                    d="m11.98,27.07c-7.61,45.4-14.6,135.31,11,172.99,1,1.49,2.58,2.27,4,2.98,1.42.72,2.48,1.22,4,.99,69.54-9.75,137.68-16.11,208-8.95,4.64.48,7.83-2.56,10-7.95,3.86-9.66,6.59-20.97,8-33.8,4.29-38.45,9.25-77.33-1-116.32-6.31-23.95-21.59-31.73-40-31.81-76.24-.28-138.07.98-185,2.98-11.87.51-16.3,2.74-19,18.89Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Theatre &amp; The Arts</h3>
+                        <span class="cs-ages">(All Ages)</span>
+                        <p class="cs-item-text">
+                            Encouraging creativity and self-expression through drama, music, dance and visual arts
+                            activities.
+                        </p>
+
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)"
+                                srcset="https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/180085086_2558143327642676_857649453976095511_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=n7OE-tS9E_MQ7kNvgH0bkd0&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=AWX293bV6w_b2pGhjCGo7cM&oh=00_AYBKFxoD0yUD5GeqzQw-j9BpLwnYIZHKkpegkZeOmaUCzg&oe=6797F512" />
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)"
+                                srcset="https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/180085086_2558143327642676_857649453976095511_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=n7OE-tS9E_MQ7kNvgH0bkd0&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=AWX293bV6w_b2pGhjCGo7cM&oh=00_AYBKFxoD0yUD5GeqzQw-j9BpLwnYIZHKkpegkZeOmaUCzg&oe=6797F512" />
+                            <img loading="lazy" decoding="async"
+                                src="https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/180085086_2558143327642676_857649453976095511_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=n7OE-tS9E_MQ7kNvgH0bkd0&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=AWX293bV6w_b2pGhjCGo7cM&oh=00_AYBKFxoD0yUD5GeqzQw-j9BpLwnYIZHKkpegkZeOmaUCzg&oe=6797F512"
+                                alt="kids" width="413" height="240" aria-hidden="true" />
+                        </picture>
+                        <!--SVG Mask-->
+                        <svg class="cs-mask" id="Layer_2-1498" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267 209">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: var(--maskBorder);
+                                        stroke-width: 8px;
+                                    }
+
+                                    .cls-2,
+                                    .cls-3 {
+                                        fill: var(--maskBG);
+                                        stroke-width: 0px;
+                                    }
+
+                                    .cls-3 {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2-1498">
+                                <polygon class="cls-2"
+                                    points="0 0 267 0 267 97.57 261.9 96.44 254.23 31.4 246.08 17.19 239.14 11.22 222 5.16 196.11 5.16 26.01 8.58 15.9 14.37 8.36 53.13 4.98 74.89 3.92 107.77 3.35 113.06 0 113.06 0 0" />
+                                <polygon class="cls-2"
+                                    points="0 209 267 209 267 96.06 261.9 96.44 260.17 112.12 259.45 130.79 255.36 164.41 248.83 184.12 245.63 192.64 236.74 196.78 211.04 193.94 180.05 193.57 142.62 192.82 56.27 199.8 38.87 202.95 27.54 204.09 23.82 197.54 14.13 186.76 9.59 164.54 4.98 108.52 0 107.96 0 209" />
+                                <path class="cls-3"
+                                    d="m7.98,55.76c1.17-11.05,2.57-21.17,4-29.72C14.68,9.8,19.1,7.55,30.98,7.04H7.98v48.72Zm0,99.31v45.97h15.85c-.31-.29-.6-.62-.85-1-7.58-11.22-12.3-27.06-15-44.97Zm45.14,45.97h205.86v-66.15c-.48,4.57-.99,9.12-1.5,13.68-.17,1.49-.33,2.98-.5,4.47-1.41,12.9-4.14,24.28-8,34-2.17,5.43-5.36,8.48-10,8-62.85-6.44-123.94-2.01-185.86,6ZM258.98,49.82V7.04h-25.8c10.43,4.14,18.6,12.97,22.8,29,1.2,4.59,2.19,9.19,3,13.78Z" />
+                                <path class="cls-1"
+                                    d="m11.98,27.07c-7.61,45.4-14.6,135.31,11,172.99,1,1.49,2.58,2.27,4,2.98,1.42.72,2.48,1.22,4,.99,69.54-9.75,137.68-16.11,208-8.95,4.64.48,7.83-2.56,10-7.95,3.86-9.66,6.59-20.97,8-33.8,4.29-38.45,9.25-77.33-1-116.32-6.31-23.95-21.59-31.73-40-31.81-76.24-.28-138.07.98-185,2.98-11.87.51-16.3,2.74-19,18.89Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Cooking</h3>
+                        <span class="cs-ages">(All Ages)</span>
+                        <p class="cs-item-text">
+                            Teaching life skills and fostering teamwork through fun, engaging, and yummy culinary
+                            activities.
+                        </p>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-wrapper">
+            <img class="cs-floater cs-floater1" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/pencil.svg" alt="icon" width="253"
+                height="470" aria-hidden="true" />
+            <img class="cs-floater cs-floater2" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/pencil2.svg" alt="icon" width="203"
+                height="452" aria-hidden="true" />
+        </div>
+        <!--SVG Hill Graphic-->
+        <svg class="cs-hills" width="1920" height="473" viewBox="0 0 1920 473" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+        </svg>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                  Timeline                    -->
+    <!-- ============================================ -->
+
+    <section id="timeline-1517">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Timeline</span>
+                    <h2 class="cs-title">Our Magical Timeline &amp; Graduation</h2>
+                    <p class="cs-text">
+                        At this early stage, we focus on creating a nurturing and stimulating environment for your
+                        little ones. Through sensory
+                        play, music, and interactive activities, we help them develop fine motor skills, curiosity, and
+                        secure relationships
+                        with their peers and teachers. Each day is designed to foster joy, exploration, and a strong
+                        sense of trust.
+                    </p>
+                </div>
+                <div class="cs-image-group">
+
+                    <!-- Diploma -->
+                    <picture class="cs-picture">
+                        <img src="./media/diploma.png" alt="certification" width="140" height="140" loading="lazy"
+                            decoding="async" aria-hidden="true">
+                    </picture>
+                    <!-- Yearbook -->
+                    <picture class="cs-picture">
+                        <img src="./media/yearbook.png" alt="certification" width="199" height="140" loading="lazy"
+                            decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-date">18 months - 2.5 years old</span>
+                    <h3 class="cs-h3">Magic Munchkins</h3>
+                    <p class="cs-item-text">
+                        In this phase, we focus on sensory exploration and fostering secure attachments. Our kids begin
+                        exploring their world with increasing independence and confidence.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-date">2.5 - 3.5 years old</span>
+                    <h3 class="cs-h3">Magic Tots</h3>
+                    <p class="cs-item-text">
+                        Toddlers begin exploring their world with increasing independence. We introduce structured play,
+                        simple problem-solving,
+                        and language development activities to build confidence and skills.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-date">3.5 - 4.5 years old</span>
+                    <h3 class="cs-h3">Magic Explorers</h3>
+                    <p class="cs-item-text">
+                        At this stage, we nurture creativity and collaboration. Children participate in group
+                        activities, art projects, and
+                        foundational learning, such as shapes, colors, and pre-writing skills.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-date">4.5 - 5 years old</span>
+                    <h3 class="cs-h3">Magic Grads</h3>
+                    <p class="cs-item-text">
+                        Preparing for the transition to kindergarten, we focus on early literacy, numeracy, and
+                        social-emotional readiness.
+                        Graduation is celebrated with a memorable ceremony!
+                    </p>
+                </li>
+                <!-- <li class="cs-item">
+                    <span class="cs-date">May 2025</span>
+                    <h3 class="cs-h3">The Magic Continues</h3>
+                    <p class="cs-item-text">
+                        5+ years
+                    </p>
+                </li> -->
+            </ul>
+        </div>
+        <!--Left floater-->
+        <img class="cs-floater cs-floater1"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-seed.svg" alt="graphic" width="232"
+            height="232" loading="lazy" decoding="async" aria-hidden="true">
+        <!--right floater-->
+        <img class="cs-floater cs-floater2"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/circle-seed.svg" alt="graphic"
+            width="232" height="232" loading="lazy" decoding="async" aria-hidden="true">
+
+        <!--SVG Zig Zags-->
+        <svg class="cs-background cs-background-top" xmlns="http://www.w3.org/2000/svg" width="1920" height="39"
+            viewBox="0 0 1920 39" fill="none">
+            <path
+                d="M1920 0H0V15.8216L4.95532 13.3966L18.1455 15.2801L28.6394 22.5944L42.0481 24.423L54.0723 27.0599L66.8979 21.3623L78.7034 23.6147L90.9463 27.8134L102.533 21.5742L114.776 24.5329L126.654 25.2314L138.605 24.7997L148.881 29.1554L160.759 28.6217L171.18 33.354L183.569 27.1698L194.573 29.9637L207.69 30.0186L219.277 25.7179L228.531 18.9373L240.556 16.0335L253.017 13.3966L265.989 13.0748L279.033 14.5267L292.296 16.1983L305.413 12.5333L317.437 17.0537L331.065 15.0682L342.943 19.157L354.749 23.0261L366.773 26.1496L378.943 29.2652L391.331 31.6903L405.469 28.0802L417.274 32.067L428.57 35.1277L440.375 35.2925L451.598 38.4631L463.622 37.7097L475.208 38.8947L487.087 35.7241L498.455 36.7993L510.115 38.1413L522.285 34.2173L536.058 32.012L547.864 26.3065L561.928 29.2652L574.171 20.7658L587.434 22.0058L599.604 24.0463L611.191 21.5192L623.215 24.6428L634.947 25.2863L646.607 23.9443L658.413 20.499L670.437 17.7051L681.805 24.423L694.048 20.7658L706.072 20.1223L728.226 29.43L741.197 24.6428H753.221L761.31 35.6692L773.771 34.1624L785.65 29.8067L796.29 31.2586L809.261 34.594L818.37 26.7382L828.864 22.1628L842.418 22.9711L852.329 17.0537L866.248 19.314L875.722 11.7877L887.673 9.95128L900.28 11.2462L911.94 8.2875L924.474 10.328L937.373 8.17763L949.98 7.15739L961.931 10.3123L966.887 7.8951L980.077 15.1545L990.57 22.4689L1003.98 24.2974L1016 26.9344L1028.83 21.2367L1040.63 23.4891L1052.88 27.6878L1064.46 21.4486L1076.71 24.4073L1088.59 25.1058L1100.54 24.6741L1110.81 29.0298L1122.69 28.4961L1133.11 33.2285L1145.5 27.0442L1156.5 29.8381L1169.62 29.8931L1181.21 25.5924L1190.46 18.8117L1202.49 15.9079L1214.95 13.271L1227.92 12.9492L1240.96 14.4011L1254.23 16.0727L1267.34 12.4077L1279.37 16.9282L1293 14.9426L1304.87 19.0236L1316.68 22.9005L1328.7 26.024L1340.87 29.1397L1353.26 31.5647L1367.4 27.9546L1379.21 31.9414L1390.5 35.0021L1402.31 35.1669L1413.53 38.3375L1425.55 37.5841L1437.14 38.7692L1449.02 35.5986L1460.39 36.6738L1472.05 38.0158L1484.22 34.0918L1497.99 31.8865L1509.79 26.181L1523.86 29.1397L1536.1 20.6403L1549.37 21.8803L1561.54 23.9207L1573.12 21.3937L1585.15 24.5172L1596.88 25.1607L1608.54 23.8187L1620.34 20.3734L1632.37 17.5717L1643.74 24.2974L1655.98 20.6403L1668 19.9967L1690.16 29.3045L1703.13 24.5172H1715.15L1723.24 35.5436L1735.7 34.0368L1747.58 29.6812L1758.22 31.1331L1771.19 34.4685L1780.3 26.6126L1790.79 22.0372L1804.35 22.8456L1814.26 16.9282L1828.18 19.1884L1837.65 11.6543L1849.6 9.82571L1862.21 11.1206L1873.87 8.16193L1886.41 10.2024L1899.3 8.05206L1911.91 7.03182L1920 7.78523V0Z"
+                fill="var(--backgroundBG)" />
+        </svg>
+
+        <svg class="cs-background cs-background-bottom" xmlns="http://www.w3.org/2000/svg" width="1920" height="39"
+            viewBox="0 0 1920 39" fill="none">
+            <path
+                d="M1920 0H0V15.8216L4.95532 13.3966L18.1455 15.2801L28.6394 22.5944L42.0481 24.423L54.0723 27.0599L66.8979 21.3623L78.7034 23.6147L90.9463 27.8134L102.533 21.5742L114.776 24.5329L126.654 25.2314L138.605 24.7997L148.881 29.1554L160.759 28.6217L171.18 33.354L183.569 27.1698L194.573 29.9637L207.69 30.0186L219.277 25.7179L228.531 18.9373L240.556 16.0335L253.017 13.3966L265.989 13.0748L279.033 14.5267L292.296 16.1983L305.413 12.5333L317.437 17.0537L331.065 15.0682L342.943 19.157L354.749 23.0261L366.773 26.1496L378.943 29.2652L391.331 31.6903L405.469 28.0802L417.274 32.067L428.57 35.1277L440.375 35.2925L451.598 38.4631L463.622 37.7097L475.208 38.8947L487.087 35.7241L498.455 36.7993L510.115 38.1413L522.285 34.2173L536.058 32.012L547.864 26.3065L561.928 29.2652L574.171 20.7658L587.434 22.0058L599.604 24.0463L611.191 21.5192L623.215 24.6428L634.947 25.2863L646.607 23.9443L658.413 20.499L670.437 17.7051L681.805 24.423L694.048 20.7658L706.072 20.1223L728.226 29.43L741.197 24.6428H753.221L761.31 35.6692L773.771 34.1624L785.65 29.8067L796.29 31.2586L809.261 34.594L818.37 26.7382L828.864 22.1628L842.418 22.9711L852.329 17.0537L866.248 19.314L875.722 11.7877L887.673 9.95128L900.28 11.2462L911.94 8.2875L924.474 10.328L937.373 8.17763L949.98 7.15739L961.931 10.3123L966.887 7.8951L980.077 15.1545L990.57 22.4689L1003.98 24.2974L1016 26.9344L1028.83 21.2367L1040.63 23.4891L1052.88 27.6878L1064.46 21.4486L1076.71 24.4073L1088.59 25.1058L1100.54 24.6741L1110.81 29.0298L1122.69 28.4961L1133.11 33.2285L1145.5 27.0442L1156.5 29.8381L1169.62 29.8931L1181.21 25.5924L1190.46 18.8117L1202.49 15.9079L1214.95 13.271L1227.92 12.9492L1240.96 14.4011L1254.23 16.0727L1267.34 12.4077L1279.37 16.9282L1293 14.9426L1304.87 19.0236L1316.68 22.9005L1328.7 26.024L1340.87 29.1397L1353.26 31.5647L1367.4 27.9546L1379.21 31.9414L1390.5 35.0021L1402.31 35.1669L1413.53 38.3375L1425.55 37.5841L1437.14 38.7692L1449.02 35.5986L1460.39 36.6738L1472.05 38.0158L1484.22 34.0918L1497.99 31.8865L1509.79 26.181L1523.86 29.1397L1536.1 20.6403L1549.37 21.8803L1561.54 23.9207L1573.12 21.3937L1585.15 24.5172L1596.88 25.1607L1608.54 23.8187L1620.34 20.3734L1632.37 17.5717L1643.74 24.2974L1655.98 20.6403L1668 19.9967L1690.16 29.3045L1703.13 24.5172H1715.15L1723.24 35.5436L1735.7 34.0368L1747.58 29.6812L1758.22 31.1331L1771.19 34.4685L1780.3 26.6126L1790.79 22.0372L1804.35 22.8456L1814.26 16.9282L1828.18 19.1884L1837.65 11.6543L1849.6 9.82571L1862.21 11.1206L1873.87 8.16193L1886.41 10.2024L1899.3 8.05206L1911.91 7.03182L1920 7.78523V0Z"
+                fill="var(--backgroundBG)" />
+        </svg>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    FAQ                       -->
+    <!-- ============================================ -->
+
+    <section id="faq-1505">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Frequently asked questions</span>
+                <h2 class="cs-title">Frequently Asked Questions About Our Daycare</h2>
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="./media/faq.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="./media/faq.png">
+                        <img loading="lazy" decoding="async" src="./media/faq.png" alt="kids playing" width="586"
+                            height="376">
+                    </picture>
+                    <!--SVG Mask-->
+                    <svg class="cs-mask" id="Layer_2-1505" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 156">
+                        <defs>
+                            <style>
+                                #faq .cls-1 {
+                                    fill: var(--maskColor);
+                                    stroke-width: 0px;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_1-2-1505">
+                            <path class="cls-1"
+                                d="m586,0H0c5.17,18.67,32.4,56,100,56h386c55.23,0,100,44.77,100,100V0Z" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="cs-flex-group">
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the operating hours of Magic Day Care?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Magic Day Care operates from 7:00 AM to 6:00 PM, Monday through Friday, excluding public
+                            holidays.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What age groups does Magic Day Care cater to?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            We welcome children aged 18 months to 5 years old, offering age-appropriate programs for
+                            each
+                            developmental stage. We also provide before and after-school care for children up to 12
+                            years of age on a request basis.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Are meals provided at Magic Day Care?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes, we provide nutritious meals and snacks, catering to various dietary restrictions and
+                            preferences. We are diligent about food safety and hygiene, and we cater to allergies and
+                            other dietary requests.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I enroll my child at Magic Day Care?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Enrollment is easy! Call us at <a href="tel:917 689 9750" class="cs-phone">
+                                (917) 689-9750</a> to schedule a tour and meet our team. If you feel like we are a good
+                            fit for your
+                            child, we will guide you through the rest of the enrollment process!
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the child-to-teacher ratio at Magic Day Care?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            We maintain low child-to-teacher ratios to ensure personalized attention and a nurturing
+                            environment. Ratios vary by age
+                            group and exceed state requirements!
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Red Graphic-->
+        <img class="cs-floater cs-floater1"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/red-squiggle2.svg" alt="graphic"
+            loading="lazy" decoding="async" width="312" height="222" aria-hidden="true">
+        <!--Leaf-->
+        <img class="cs-floater cs-floater2"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf2.svg" alt="graphic" loading="lazy"
+            decoding="async" width="207" height="211" aria-hidden="true">
+        <!--Top SVG zig zag-->
+        <svg class="cs-top" width="1920" height="39" viewBox="0 0 1920 39" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1920 -0.388672H0V15.4329L4.95532 13.0079L18.1455 14.8914L28.6394 22.2058L42.0481 24.0343L54.0723 26.6713L66.8979 20.9736L78.7034 23.226L90.9463 27.4247L102.533 21.1855L114.776 24.1442L126.654 24.8427L138.605 24.411L148.881 28.7667L160.759 28.233L171.18 32.9654L183.569 26.7811L194.573 29.575L207.69 29.63L219.277 25.3293L228.531 18.5486L240.556 15.6448L253.017 13.0079L265.989 12.6861L279.033 14.138L292.296 15.8096L305.413 12.1446L317.437 16.6651L331.065 14.6795L342.943 18.7683L354.749 22.6374L366.773 25.7609L378.943 28.8766L391.331 31.3016L405.469 27.6915L417.274 31.6783L428.57 34.739L440.375 34.9038L451.598 38.0744L463.622 37.321L475.208 38.5061L487.087 35.3355L498.455 36.4107L510.115 37.7527L522.285 33.8287L536.058 31.6234L547.864 25.9179L561.928 28.8766L574.171 20.3772L587.434 21.6172L599.604 23.6576L611.191 21.1306L623.215 24.2541L634.947 24.8976L646.607 23.5556L658.413 20.1103L670.437 17.3164L681.805 24.0343L694.048 20.3772L706.072 19.7336L728.226 29.0414L741.197 24.2541H753.221L761.31 35.2805L773.771 33.7737L785.65 29.4181L796.29 30.87L809.261 34.2054L818.37 26.3495L828.864 21.7741L842.418 22.5825L852.329 16.6651L866.248 18.9253L875.722 11.399L887.673 9.56261L900.28 10.8575L911.94 7.89883L924.474 9.93931L937.373 7.78896L949.98 6.76871L961.931 9.92362L966.887 7.50643L980.077 14.7658L990.57 22.0802L1003.98 23.9088L1016 26.5457L1028.83 20.848L1040.63 23.1004L1052.88 27.2991L1064.46 21.0599L1076.71 24.0186L1088.59 24.7171L1100.54 24.2855L1110.81 28.6411L1122.69 28.1075L1133.11 32.8398L1145.5 26.6556L1156.5 29.4495L1169.62 29.5044L1181.21 25.2037L1190.46 18.423L1202.49 15.5192L1214.95 12.8823L1227.92 12.5605L1240.96 14.0124L1254.23 15.6841L1267.34 12.019L1279.37 16.5395L1293 14.5539L1304.87 18.6349L1316.68 22.5118L1328.7 25.6353L1340.87 28.751L1353.26 31.176L1367.4 27.5659L1379.21 31.5527L1390.5 34.6135L1402.31 34.7783L1413.53 37.9489L1425.55 37.1955L1437.14 38.3805L1449.02 35.2099L1460.39 36.2851L1472.05 37.6271L1484.22 33.7031L1497.99 31.4978L1509.79 25.7923L1523.86 28.751L1536.1 20.2516L1549.37 21.4916L1561.54 23.5321L1573.12 21.005L1585.15 24.1285L1596.88 24.7721L1608.54 23.43L1620.34 19.9848L1632.37 17.183L1643.74 23.9088L1655.98 20.2516L1668 19.6081L1690.16 28.9158L1703.13 24.1285H1715.15L1723.24 35.155L1735.7 33.6482L1747.58 29.2925L1758.22 30.7444L1771.19 34.0798L1780.3 26.2239L1790.79 21.6485L1804.35 22.4569L1814.26 16.5395L1828.18 18.7997L1837.65 11.2656L1849.6 9.43704L1862.21 10.732L1873.87 7.77326L1886.41 9.81374L1899.3 7.66339L1911.91 6.64315L1920 7.39656V-0.388672Z"
+                fill="white" />
+        </svg>
+        <!--Bottom SVG zig zag-->
+        <svg class="cs-bottom" width="1900" height="39" viewBox="0 0 1900 39" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1900 38.8948H-20V23.0732L-15.0447 25.4982L-1.85449 23.6147L8.6394 16.3004L22.0481 14.4718L34.0723 11.8348L46.8979 17.5325L58.7034 15.2801L70.9463 11.0814L82.5332 17.3206L94.7759 14.3619L106.654 13.6634L118.605 14.0951L128.881 9.73941L140.759 10.2731L151.18 5.54073L163.569 11.725L174.573 8.93107L187.69 8.87613L199.277 13.1768L208.531 19.9575L220.556 22.8613L233.017 25.4982L245.989 25.82L259.033 24.3681L272.296 22.6965L285.413 26.3615L297.437 21.841L311.065 23.8266L322.943 19.7378L334.749 15.8687L346.773 12.7452L358.943 9.62954L371.331 7.20451L385.469 10.8146L397.274 6.8278L408.57 3.76708L420.375 3.60227L431.598 0.431671L443.622 1.18508L455.208 3.05176e-05L467.087 3.17063L478.455 2.09545L490.115 0.753441L502.285 4.67744L516.058 6.88274L527.864 12.5882L541.928 9.62954L554.171 18.1289L567.434 16.889L579.604 14.8485L591.191 17.3755L603.215 14.252L614.947 13.6085L626.607 14.9505L638.413 18.3958L650.437 21.1897L661.805 14.4718L674.048 18.1289L686.072 18.7725L708.226 9.46473L721.197 14.252H733.221L741.31 3.22556L753.771 4.73238L765.65 9.08803L776.29 7.63615L789.261 4.30074L798.37 12.1566L808.864 16.732L822.418 15.9236L832.329 21.841L846.248 19.5808L855.722 27.1071L867.673 28.9435L880.28 27.6486L891.94 30.6073L904.474 28.5668L917.373 30.7171L929.98 31.7374L941.931 28.5825L946.887 30.9997L960.077 23.7403L970.57 16.4259L983.979 14.5973L996.003 11.9604L1008.83 17.6581L1020.63 15.4057L1032.88 11.207L1044.46 17.4462L1056.71 14.4875L1068.59 13.789L1080.54 14.2206L1090.81 9.86498L1102.69 10.3986L1113.11 5.66629L1125.5 11.8505L1136.5 9.05664L1149.62 9.0017L1161.21 13.3024L1170.46 20.0831L1182.49 22.9869L1194.95 25.6238L1207.92 25.9456L1220.96 24.4937L1234.23 22.822L1247.34 26.4871L1259.37 21.9666L1273 23.9522L1284.87 19.8712L1296.68 15.9943L1308.7 12.8708L1320.87 9.75511L1333.26 7.33007L1347.4 10.9402L1359.21 6.95337L1370.5 3.89264L1382.31 3.72784L1393.53 0.55724L1405.55 1.31065L1417.14 0.125599L1429.02 3.2962L1440.39 2.22102L1452.05 0.879009L1464.22 4.80301L1477.99 7.0083L1489.79 12.7138L1503.86 9.75511L1516.1 18.2545L1529.37 17.0145L1541.54 14.974L1553.12 17.5011L1565.15 14.3776L1576.88 13.7341L1588.54 15.0761L1600.34 18.5213L1612.37 21.3231L1623.74 14.5973L1635.98 18.2545L1648 18.898L1670.16 9.5903L1683.13 14.3776H1695.15L1703.24 3.35113L1715.7 4.85795L1727.58 9.2136L1738.22 7.76171L1751.19 4.42631L1760.3 12.2822L1770.79 16.8576L1784.35 16.0492L1794.26 21.9666L1808.18 19.7064L1817.65 27.2405L1829.6 29.0691L1842.21 27.7741L1853.87 30.7328L1866.41 28.6924L1879.3 30.8427L1891.91 31.863L1900 31.1095V38.8948Z"
+                fill="white" />
+        </svg>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Review                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1529">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">Happy Customer Feedback About Our Service</h2>
+                <p class="cs-text">
+                    We pride ourselves on fostering connections with our families just as much as we do with our magical
+                    kids! Here's what some of our parents have to say about their experience with Magic Day Care.
+                </p>
+            </div>
+
+            <!-- Tenative first review -->
+            <div class="cs-review">
+                <div class="cs-flex">
+                    <p class="cs-quote-long">
+                        This is a fantastic famiy daycare, small and perfect for those who are looking for personal and
+                        nurturing environment.
+                        My son went there for almost 2 years, and is now in kindergarten, asks to go back and visit.
+                        Oksana is a phenomenal caregiver and has great staff. Kids have amazing learning oppotunities.
+                        Crafts are done daiy, in
+                        addition there is English literacy classes, math enrichment, Russian, music/chorus, art and
+                        kinderdance. All incuded in
+                        the monthy tuition. Classes are taught by certified instructors.For an additional fee, children
+                        particiate in cooking
+                        classes. Kids put on 3-4 shows per year. They have additional parties, like back to school,
+                        halloween and movies under
+                        the stars. They go on neighborhood educational trips.
+                        My son was accepted in to NYC gifted and talented elementary school program. I didn't do
+                        additional prep outside of
+                        basic curriculum at Magic Daycare. He reads above grade level.
+
+                        And for those concerned with food: the chef at Magic Daycare is amazing. All food is prepped
+                        daily and is organic and
+                        healthy.
+                    </p>
+                    <span class="cs-name">Maria</span>
+                    <span class="cs-job">1 kid graduated from Magic Day Care</span>
+                </div>
+                <div class="cs-blob-wrapper">
+                    <!--Wrapper in a div so we dont need to set overflow hidden on the cs-review to clip them, which would clip the floating graphics as well. Instead we have a sacrifical div to clip the blobs inside of-->
+                    <!--Left Blob-->
+                    <svg class="cs-blob cs-blob1" width="162" height="128" viewBox="0 0 162 128" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.578 122.409C10.381 119.368 5.92643 114.978 3.60463 109.384C0.9885 103.088 0.175877 96.0886 -0.354449 89.3761C-0.866915 82.8575 -1.24072 75.777 -5.31557 70.3659C-9.67808 64.5668 -16.4216 63.1296 -23.3033 64.3291C-39.2035 67.104 -48.514 81.3615 -62.3523 88.2493C-76.8448 95.4647 -94.4631 94.1513 -109.354 89.1531C-116.966 86.597 -124.408 83.1835 -131.334 79.1082C-138.132 75.1098 -144.284 70.2008 -149.303 64.0714C-158.733 52.5594 -162.328 36.754 -160.217 22.0489C-158.195 7.94315 -150.61 -4.57519 -139.145 -12.908C-133.368 -17.1036 -127.101 -20.3408 -120.127 -21.8691C-111.542 -23.7487 -102.778 -23.0838 -94.1272 -21.816C-76.3173 -19.2024 -59.0408 -12.8899 -41.1498 -10.7076C-33.2319 -9.74094 -24.8931 -9.53953 -17.1478 -11.6585C-11.3315 -13.2476 -6.55438 -15.5318 -2.13146 -19.6277C2.49267 -23.9098 6.35041 -29.4307 9.8992 -34.6032C13.9864 -40.5641 18.343 -45.896 23.9319 -50.5745C35.2231 -60.0189 49.3056 -65.3874 63.9625 -65.4926C64.2181 -65.4958 64.7911 -65.5969 64.9625 -65.4906C72.1959 -65.4758 78.9861 -64.3591 85.9563 -62.4476C101.309 -58.2417 116.323 -49.9956 128.911 -40.3597C140.909 -31.1783 151.882 -20.4226 157.842 -6.30045C163.027 5.98506 163.158 20.3515 157.762 32.6995C155.234 38.4881 151.818 43.9003 146.731 47.6769C141.07 51.8764 132.65 55.09 125.721 52.634C118.883 50.211 116.075 41.9996 108.746 40.5992C102.216 39.3503 95.2099 43.0425 90.7313 47.5624C85.1368 53.2059 83.2703 60.9658 81.6883 68.5439C80.0954 76.1549 79.1905 84.1586 76.6413 91.5336C72.0829 104.72 63.2704 117.033 50.5759 123.48C39.6798 129.007 26.1617 128.597 15.578 122.409Z"
+                            fill="var(--blobColor)" />
+                    </svg>
+                    <!--RIght blob-->
+                    <svg class="cs-blob cs-blob2" width="423" height="152" viewBox="0 0 423 152" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M446 185.996C437.652 209.276 424.317 227.375 409 226.996C398.568 226.732 389.048 219.154 380 211.996C346.92 185.812 321.111 207.237 285 219.996C244.784 234.202 223.038 185.716 189 168.996C142.612 146.21 105.611 185.367 58.9998 204.996C34.8473 215.167 10.0832 211.93 1.9998 169.996C-9.5339 110.121 40.5169 96.6287 61.9998 87.9963C77.3226 81.8377 93.2386 72.8434 107 56.9963C119.705 42.3661 131.527 7.18936 146 0.99633C152.671 -1.85625 158.896 2.75738 164 8.99633C171.922 18.6733 177.895 32.0744 187 38.9963C204.137 52.031 224.119 57.6817 244 49.9963C263.795 42.3397 279.796 18.2702 299 7.99633C309.489 2.383 321.457 2.19178 330 10.9963C344.858 26.3211 348.113 61.1321 363 76.9963C379.775 94.8809 403.952 94.1948 424 78.9963C429.052 75.168 433.775 70.4414 439 67.9963C455.161 60.443 463.429 84.0291 462 108.996C460.542 134.291 454.106 163.405 446 185.996Z"
+                            fill="var(--blobColor)" />
+                    </svg>
+                </div>
+                <!--Green Squiggles-->
+                <img class="cs-graphic cs-graphic-one"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-four.svg"
+                    alt="green graphic" loading="lazy" decoding="async" height="134" width="197">
+                <!--Rd Squiggle-->
+                <img class="cs-graphic cs-graphic-two"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-three.svg"
+                    alt="red graphic" loading="lazy" decoding="async" height="191" width="138">
+            </div>
+
+            <div class="cs-reviews-grid">
+                <!-- First Review -->
+                <div class="cs-review">
+                    <div class="cs-flex">
+                        <p class="cs-quote">
+                            My son Alex been going to this daycare for a year now and he literally learnt russian there
+                            from scratch. Grateful for
+                            caring teachers, healthy delish food for kids, and great russian speaking community!
+                            Recommend💕
+                        </p>
+                        <span class="cs-name">Svetlana</span>
+                        <span class="cs-job">1 kid graduated from Magic Day Care</span>
+                    </div>
+                    <div class="cs-blob-wrapper">
+                        <!--Wrapper in a div so we dont need to set overflow hidden on the cs-review to clip them, which would clip the floating graphics as well. Instead we have a sacrifical div to clip the blobs inside of-->
+                        <!--Left Blob-->
+                        <svg class="cs-blob cs-blob1" width="162" height="128" viewBox="0 0 162 128" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.578 122.409C10.381 119.368 5.92643 114.978 3.60463 109.384C0.9885 103.088 0.175877 96.0886 -0.354449 89.3761C-0.866915 82.8575 -1.24072 75.777 -5.31557 70.3659C-9.67808 64.5668 -16.4216 63.1296 -23.3033 64.3291C-39.2035 67.104 -48.514 81.3615 -62.3523 88.2493C-76.8448 95.4647 -94.4631 94.1513 -109.354 89.1531C-116.966 86.597 -124.408 83.1835 -131.334 79.1082C-138.132 75.1098 -144.284 70.2008 -149.303 64.0714C-158.733 52.5594 -162.328 36.754 -160.217 22.0489C-158.195 7.94315 -150.61 -4.57519 -139.145 -12.908C-133.368 -17.1036 -127.101 -20.3408 -120.127 -21.8691C-111.542 -23.7487 -102.778 -23.0838 -94.1272 -21.816C-76.3173 -19.2024 -59.0408 -12.8899 -41.1498 -10.7076C-33.2319 -9.74094 -24.8931 -9.53953 -17.1478 -11.6585C-11.3315 -13.2476 -6.55438 -15.5318 -2.13146 -19.6277C2.49267 -23.9098 6.35041 -29.4307 9.8992 -34.6032C13.9864 -40.5641 18.343 -45.896 23.9319 -50.5745C35.2231 -60.0189 49.3056 -65.3874 63.9625 -65.4926C64.2181 -65.4958 64.7911 -65.5969 64.9625 -65.4906C72.1959 -65.4758 78.9861 -64.3591 85.9563 -62.4476C101.309 -58.2417 116.323 -49.9956 128.911 -40.3597C140.909 -31.1783 151.882 -20.4226 157.842 -6.30045C163.027 5.98506 163.158 20.3515 157.762 32.6995C155.234 38.4881 151.818 43.9003 146.731 47.6769C141.07 51.8764 132.65 55.09 125.721 52.634C118.883 50.211 116.075 41.9996 108.746 40.5992C102.216 39.3503 95.2099 43.0425 90.7313 47.5624C85.1368 53.2059 83.2703 60.9658 81.6883 68.5439C80.0954 76.1549 79.1905 84.1586 76.6413 91.5336C72.0829 104.72 63.2704 117.033 50.5759 123.48C39.6798 129.007 26.1617 128.597 15.578 122.409Z"
+                                fill="var(--blobColor)" />
+                        </svg>
+                        <!--RIght blob-->
+                        <svg class="cs-blob cs-blob2" width="423" height="152" viewBox="0 0 423 152" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M446 185.996C437.652 209.276 424.317 227.375 409 226.996C398.568 226.732 389.048 219.154 380 211.996C346.92 185.812 321.111 207.237 285 219.996C244.784 234.202 223.038 185.716 189 168.996C142.612 146.21 105.611 185.367 58.9998 204.996C34.8473 215.167 10.0832 211.93 1.9998 169.996C-9.5339 110.121 40.5169 96.6287 61.9998 87.9963C77.3226 81.8377 93.2386 72.8434 107 56.9963C119.705 42.3661 131.527 7.18936 146 0.99633C152.671 -1.85625 158.896 2.75738 164 8.99633C171.922 18.6733 177.895 32.0744 187 38.9963C204.137 52.031 224.119 57.6817 244 49.9963C263.795 42.3397 279.796 18.2702 299 7.99633C309.489 2.383 321.457 2.19178 330 10.9963C344.858 26.3211 348.113 61.1321 363 76.9963C379.775 94.8809 403.952 94.1948 424 78.9963C429.052 75.168 433.775 70.4414 439 67.9963C455.161 60.443 463.429 84.0291 462 108.996C460.542 134.291 454.106 163.405 446 185.996Z"
+                                fill="var(--blobColor)" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Second Review -->
+                <div class="cs-review">
+                    <div class="cs-flex">
+                        <p class="cs-quote">
+                            This is the best daycare I have sent my daughter to! The owner is so kind and personally
+                            cares about each of the kids I
+                            highly recommend this place to all of my friends!!
+                        </p>
+                        <span class="cs-name">Ananya</span>
+                        <span class="cs-job">2 kids graduated from Magic Day Care</span>
+                    </div>
+                    <div class="cs-blob-wrapper">
+                        <!--Wrapper in a div so we dont need to set overflow hidden on the cs-review to clip them, which would clip the floating graphics as well. Instead we have a sacrifical div to clip the blobs inside of-->
+                        <!--Left Blob-->
+                        <svg class="cs-blob cs-blob1" width="162" height="128" viewBox="0 0 162 128" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.578 122.409C10.381 119.368 5.92643 114.978 3.60463 109.384C0.9885 103.088 0.175877 96.0886 -0.354449 89.3761C-0.866915 82.8575 -1.24072 75.777 -5.31557 70.3659C-9.67808 64.5668 -16.4216 63.1296 -23.3033 64.3291C-39.2035 67.104 -48.514 81.3615 -62.3523 88.2493C-76.8448 95.4647 -94.4631 94.1513 -109.354 89.1531C-116.966 86.597 -124.408 83.1835 -131.334 79.1082C-138.132 75.1098 -144.284 70.2008 -149.303 64.0714C-158.733 52.5594 -162.328 36.754 -160.217 22.0489C-158.195 7.94315 -150.61 -4.57519 -139.145 -12.908C-133.368 -17.1036 -127.101 -20.3408 -120.127 -21.8691C-111.542 -23.7487 -102.778 -23.0838 -94.1272 -21.816C-76.3173 -19.2024 -59.0408 -12.8899 -41.1498 -10.7076C-33.2319 -9.74094 -24.8931 -9.53953 -17.1478 -11.6585C-11.3315 -13.2476 -6.55438 -15.5318 -2.13146 -19.6277C2.49267 -23.9098 6.35041 -29.4307 9.8992 -34.6032C13.9864 -40.5641 18.343 -45.896 23.9319 -50.5745C35.2231 -60.0189 49.3056 -65.3874 63.9625 -65.4926C64.2181 -65.4958 64.7911 -65.5969 64.9625 -65.4906C72.1959 -65.4758 78.9861 -64.3591 85.9563 -62.4476C101.309 -58.2417 116.323 -49.9956 128.911 -40.3597C140.909 -31.1783 151.882 -20.4226 157.842 -6.30045C163.027 5.98506 163.158 20.3515 157.762 32.6995C155.234 38.4881 151.818 43.9003 146.731 47.6769C141.07 51.8764 132.65 55.09 125.721 52.634C118.883 50.211 116.075 41.9996 108.746 40.5992C102.216 39.3503 95.2099 43.0425 90.7313 47.5624C85.1368 53.2059 83.2703 60.9658 81.6883 68.5439C80.0954 76.1549 79.1905 84.1586 76.6413 91.5336C72.0829 104.72 63.2704 117.033 50.5759 123.48C39.6798 129.007 26.1617 128.597 15.578 122.409Z"
+                                fill="var(--blobColor)" />
+                        </svg>
+                        <!--RIght blob-->
+                        <svg class="cs-blob cs-blob2" width="423" height="152" viewBox="0 0 423 152" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M446 185.996C437.652 209.276 424.317 227.375 409 226.996C398.568 226.732 389.048 219.154 380 211.996C346.92 185.812 321.111 207.237 285 219.996C244.784 234.202 223.038 185.716 189 168.996C142.612 146.21 105.611 185.367 58.9998 204.996C34.8473 215.167 10.0832 211.93 1.9998 169.996C-9.5339 110.121 40.5169 96.6287 61.9998 87.9963C77.3226 81.8377 93.2386 72.8434 107 56.9963C119.705 42.3661 131.527 7.18936 146 0.99633C152.671 -1.85625 158.896 2.75738 164 8.99633C171.922 18.6733 177.895 32.0744 187 38.9963C204.137 52.031 224.119 57.6817 244 49.9963C263.795 42.3397 279.796 18.2702 299 7.99633C309.489 2.383 321.457 2.19178 330 10.9963C344.858 26.3211 348.113 61.1321 363 76.9963C379.775 94.8809 403.952 94.1948 424 78.9963C429.052 75.168 433.775 70.4414 439 67.9963C455.161 60.443 463.429 84.0291 462 108.996C460.542 134.291 454.106 163.405 446 185.996Z"
+                                fill="var(--blobColor)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Review -->
+            <div class="cs-review">
+                <div class="cs-flex">
+                    <p class="cs-quote-long">
+                        I can't believe this is the LAST New Year's Eve in my "mom's" life. Very touching and warm
+                        holiday. How much soul and
+                        time have been invested by you, Oksana, and wonderful educators. Happy and sad at the same
+                        time:
+                        how fast the time
+                        flies...
+                        A huge thank you to Oksana Beytulla for your dedication in making this event so memorable.
+                        From
+                        the beautiful
+                        decorations to the thoughtful scenario, and the delightful table of sweets - everything was
+                        simply perfect! ❤️
+                    </p>
+                    <span class="cs-name">Alexandra</span>
+                    <span class="cs-job">4 kids graduated from Magic Day Care</span>
+                </div>
+                <div class="cs-blob-wrapper">
+                    <!--Wrapper in a div so we dont need to set overflow hidden on the cs-review to clip them, which would clip the floating graphics as well. Instead we have a sacrifical div to clip the blobs inside of-->
+                    <!--Left Blob-->
+                    <svg class="cs-blob cs-blob1" width="162" height="128" viewBox="0 0 162 128" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.578 122.409C10.381 119.368 5.92643 114.978 3.60463 109.384C0.9885 103.088 0.175877 96.0886 -0.354449 89.3761C-0.866915 82.8575 -1.24072 75.777 -5.31557 70.3659C-9.67808 64.5668 -16.4216 63.1296 -23.3033 64.3291C-39.2035 67.104 -48.514 81.3615 -62.3523 88.2493C-76.8448 95.4647 -94.4631 94.1513 -109.354 89.1531C-116.966 86.597 -124.408 83.1835 -131.334 79.1082C-138.132 75.1098 -144.284 70.2008 -149.303 64.0714C-158.733 52.5594 -162.328 36.754 -160.217 22.0489C-158.195 7.94315 -150.61 -4.57519 -139.145 -12.908C-133.368 -17.1036 -127.101 -20.3408 -120.127 -21.8691C-111.542 -23.7487 -102.778 -23.0838 -94.1272 -21.816C-76.3173 -19.2024 -59.0408 -12.8899 -41.1498 -10.7076C-33.2319 -9.74094 -24.8931 -9.53953 -17.1478 -11.6585C-11.3315 -13.2476 -6.55438 -15.5318 -2.13146 -19.6277C2.49267 -23.9098 6.35041 -29.4307 9.8992 -34.6032C13.9864 -40.5641 18.343 -45.896 23.9319 -50.5745C35.2231 -60.0189 49.3056 -65.3874 63.9625 -65.4926C64.2181 -65.4958 64.7911 -65.5969 64.9625 -65.4906C72.1959 -65.4758 78.9861 -64.3591 85.9563 -62.4476C101.309 -58.2417 116.323 -49.9956 128.911 -40.3597C140.909 -31.1783 151.882 -20.4226 157.842 -6.30045C163.027 5.98506 163.158 20.3515 157.762 32.6995C155.234 38.4881 151.818 43.9003 146.731 47.6769C141.07 51.8764 132.65 55.09 125.721 52.634C118.883 50.211 116.075 41.9996 108.746 40.5992C102.216 39.3503 95.2099 43.0425 90.7313 47.5624C85.1368 53.2059 83.2703 60.9658 81.6883 68.5439C80.0954 76.1549 79.1905 84.1586 76.6413 91.5336C72.0829 104.72 63.2704 117.033 50.5759 123.48C39.6798 129.007 26.1617 128.597 15.578 122.409Z"
+                            fill="var(--blobColor)" />
+                    </svg>
+                    <!--RIght blob-->
+                    <svg class="cs-blob cs-blob2" width="423" height="152" viewBox="0 0 423 152" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M446 185.996C437.652 209.276 424.317 227.375 409 226.996C398.568 226.732 389.048 219.154 380 211.996C346.92 185.812 321.111 207.237 285 219.996C244.784 234.202 223.038 185.716 189 168.996C142.612 146.21 105.611 185.367 58.9998 204.996C34.8473 215.167 10.0832 211.93 1.9998 169.996C-9.5339 110.121 40.5169 96.6287 61.9998 87.9963C77.3226 81.8377 93.2386 72.8434 107 56.9963C119.705 42.3661 131.527 7.18936 146 0.99633C152.671 -1.85625 158.896 2.75738 164 8.99633C171.922 18.6733 177.895 32.0744 187 38.9963C204.137 52.031 224.119 57.6817 244 49.9963C263.795 42.3397 279.796 18.2702 299 7.99633C309.489 2.383 321.457 2.19178 330 10.9963C344.858 26.3211 348.113 61.1321 363 76.9963C379.775 94.8809 403.952 94.1948 424 78.9963C429.052 75.168 433.775 70.4414 439 67.9963C455.161 60.443 463.429 84.0291 462 108.996C460.542 134.291 454.106 163.405 446 185.996Z"
+                            fill="var(--blobColor)" />
+                    </svg>
+                </div>
+                <!--Green Squiggles-->
+                <img class="cs-graphic cs-graphic-one"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-four.svg"
+                    alt="green graphic" loading="lazy" decoding="async" height="134" width="197">
+                <!--Rd Squiggle-->
+                <img class="cs-graphic cs-graphic-two"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-three.svg"
+                    alt="red graphic" loading="lazy" decoding="async" height="191" width="138">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Team                      -->
+    <!-- ============================================ -->
+
+    <section id="meet-team-2071">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Team</span>
+                <h2 class="cs-title">The Magic Makers</h2>
+                <p class="cs-text">
+                    Our dedicated and talented team is the heart of our success. Each team member brings
+                    a unique set of skills and a shared passion for helping children thrive. Meet the individuals who
+                    create magic every day!
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-name">Mrs. Oksana</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Provider / Teacher</span>
+                        <!-- <span class="cs-department">something</span> -->
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Mrs. Irina</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Teacher</span>
+                        <!-- <span class="cs-department">something</span> -->
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Mrs. Yaryna</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Pre-K Teacher</span>
+                        <!-- <span class="cs-department">something</span> -->
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Mrs. Luda</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Teacher</span>
+                        <!-- <span class="cs-department">something</span> -->
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Mrs. Doris</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Kinderdance / Spanish Teacher</span>
+                        <!-- <span class="cs-department">something</span> -->
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Mrs. Lena</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Russian Teacher</span>
+                        <!-- <span class="cs-department">something</span> -->
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Mrs. Yelena</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Music Teacher</span>
+                        <!-- <span class="cs-department">something</span> -->
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Mrs. Janna</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Chef</span>
+                        <!-- <span class="cs-department">something</span> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="./media/team.jpeg">
+            <source media="(min-width: 601px)" srcset="./media/team.jpeg">
+            <img loading="lazy" decoding="async" src="./media/team.jpeg" alt="Magic Makers" width="1024" height="894">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Footer                    -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-274">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="#sbsr-1475">
+                    <!-- Remove the light class if you don't need the dark logo -->
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="./media/Magic.png"
+                        alt="logo" width="240" height="32">
+                </a>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="tel:917 689 9750">(917) 689 9750</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="mailto:magicdaycare@gmail.com">magicdaycare@gmail.com</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Address</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link"
+                        href="https://www.google.com/maps/place/Magic+Day+Care/@40.5723397,-74.0971263,20z/data=!4m15!1m8!3m7!1s0x89c24934dae08fe7:0x125b49f75e6c766c!2s907+Nugent+Ave,+Staten+Island,+NY+10306!3b1!8m2!3d40.5725069!4d-74.0969268!16s%2Fg%2F11bzz1nw88!3m5!1s0x89c24934dafca001:0x9aa9e14627469c60!8m2!3d40.572511!4d-74.096977!16s%2Fg%2F11bzrcqst8?entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">907
+                        Nugent Ave<br> Staten Island, NY 10306</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-nav">
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit google profile"
+                        href="https://www.google.com/search?q=magic+daycare+staten+island&oq=magic+daycare+staten+island&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyEAgBEC4YrwEYxwEYgAQYjgUyBggCEEUYQDIICAMQABgWGB4yCAgEEAAYFhgeMg0IBRAAGIYDGIAEGIoFMg0IBhAAGIYDGIAEGIoFMgYIBxBFGDzSAQc1NDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                        target="_blank">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11"
+                            height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile"
+                        href="https://www.facebook.com/profile.php?id=100063598321621" target="_blank">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6"
+                            height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile"
+                        href="https://www.instagram.com/magicdaycaresi/" target="_blank">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram"
+                            width="11" height="11">
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <!-- copyright -->
+        <p class="cs-copy">&copy; 2007 - 2025 Magic Day Care. All rights reserved.</p>
+    </footer>
+
+    <!-- ============================================ -->
+    <!--                    Scripts                   -->
+    <!-- ============================================ -->
+
+    <script>
+        const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+                item.classList.toggle('active')
+            }
+            item.addEventListener('click', onClick)
+        }
+    </script>
+</body>
+
+</html>
