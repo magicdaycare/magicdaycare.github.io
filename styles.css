@@ -2634,42 +2634,34 @@ body {
     background-repeat: repeat-x;
 }
 
-/* Mobile - 360px */
+/* Base Mobile Styles (0px and up) */
 @media only screen and (min-width: 0rem) {
     #cs-footer-274 {
         padding: var(--sectionPadding);
-        /* Navigation Links */
     }
 
     #cs-footer-274 .cs-container {
         width: 100%;
-        /* reset on tablet */
         max-width: 34.375rem;
         margin: auto;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        column-gap: 5.5rem;
+        flex-direction: column;
+        align-items: center;
         row-gap: 2rem;
     }
 
     #cs-footer-274 .cs-logo-group {
-        /* takes up all the space, lets the other ul's wrap below it */
-        width: 100%;
+        width: auto;
         position: relative;
-    }
-
-    #cs-footer-274 .cs-logo-group {
-        /* 44px - 52px */
         margin-bottom: clamp(2.75rem, 6.8vw, 3.25rem);
     }
 
     #cs-footer-274 .cs-logo {
-        /* 210px - 240px */
         width: clamp(13.125rem, 8vw, 15rem);
         height: auto;
         display: block;
+        margin: 0 auto;
+        /* Centers the logo */
     }
 
     #cs-footer-274 .cs-logo-img {
@@ -2679,7 +2671,8 @@ body {
 
     #cs-footer-274 .cs-social {
         display: inline-flex;
-        justify-content: flex-start;
+        justify-content: center;
+        /* Centers social media icons */
         gap: 0.75rem;
         top: 0;
         right: 0;
@@ -2726,7 +2719,6 @@ body {
         font-size: 1rem;
         line-height: 1.5em;
         font-weight: 700;
-        /* 16px - 20px */
         margin-bottom: clamp(1rem, 2.7vw, 1.25rem);
         color: var(--bodyTextColor);
         position: relative;
@@ -2742,7 +2734,6 @@ body {
     }
 
     #cs-footer-274 .cs-nav-link:before {
-        /* underline */
         content: "";
         width: 0%;
         height: 0.125rem;
@@ -2760,12 +2751,16 @@ body {
     }
 }
 
-/* Tablet - 768px */
+/* Tablet Adjustments (768px and up) */
 @media only screen and (min-width: 48rem) {
     #cs-footer-274 .cs-container {
         max-width: 80rem;
+        flex-direction: row;
+        /* Reverts to row layout */
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
         row-gap: 0;
-        /* 44px - 88px */
         column-gap: clamp(2.75rem, calc(6%), 5.5rem);
     }
 
@@ -2773,6 +2768,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 0;
     }
 
     #cs-footer-274 .cs-social {
@@ -2783,7 +2779,7 @@ body {
     }
 }
 
-/* Small Desktop - 1024px */
+/* Small Desktop Adjustments (1024px and up) */
 @media only screen and (min-width: 64rem) {
     #cs-footer-274 .cs-container {
         justify-content: flex-end;
@@ -2792,7 +2788,6 @@ body {
     #cs-footer-274 .cs-logo-group {
         width: auto;
         margin: 0;
-        /* pushes the rest of the content to the right in a flexbox */
         margin-right: auto;
         flex-direction: column;
     }
@@ -2802,6 +2797,7 @@ body {
     }
 }
 
+/* Copyright Styles */
 .cs-copy {
     font-size: 1rem;
     line-height: 1.5em;
